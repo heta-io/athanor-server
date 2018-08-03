@@ -24,16 +24,17 @@ object TextAnalysisHandler {
     Json.formatResults(pipelineResults, "Text Analysis Results")
   }
 
-  val parser: Flow[ByteString, List[ParsedSentence], NotUsed] = Flow[ByteString].map { bs =>
+  val parser: Flow[ByteString, List[ParsedSentence], NotUsed] = Flow[ByteString].mapAsync(10) { bs =>
     val inputText = bs.utf8String
     TextParser.parse(inputText)
   }
 
   def athanor(grammar: String): Flow[List[ParsedSentence], List[List[String]], NotUsed] = {
-    Flow[List[ParsedSentence]].map { sents =>
-      sents.map { ps =>
+    Flow[List[ParsedSentence]].mapAsync(10) { sents =>
+      val listOfFutures = sents.map { ps =>
         Athanor.analyseParsedSentence(ps, grammar)
       }
+      Future.sequence(listOfFutures)
     }
   }
 }

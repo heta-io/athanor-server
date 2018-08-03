@@ -13,6 +13,9 @@ import edu.stanford.nlp.trees.TreeCoreAnnotations.TreeAnnotation
 import edu.stanford.nlp.util.CoreMap
 
 import scala.collection.JavaConverters._
+import scala.concurrent.Future
+
+import scala.concurrent.ExecutionContext.Implicits.global
 
 /**
   * Created by andrew@andrewresearch.net on 17/7/17.
@@ -26,18 +29,18 @@ object TextParser {
     new StanfordCoreNLP(props)
   }
 
-  def parse(text:String):List[ParsedSentence] = {
-    val sentences = annotateSentences(text)
-    parseSentences(sentences)
-  }
+  def parse(text:String):Future[List[ParsedSentence]] = for {
+    sentences <- annotateSentences(text)
+    parsed <- parseSentences(sentences)
+  } yield (parsed)
 
-  def annotateSentences(text:String):List[CoreMap] = {
+  def annotateSentences(text:String):Future[List[CoreMap]] = Future {
     val document = new Annotation(text)
     pipeline.annotate(document)
     document.get(classOf[SentencesAnnotation]).asScala.toList
   }
 
-  def parseSentences(sentences:List[CoreMap]):List[ParsedSentence] = {
+  def parseSentences(sentences:List[CoreMap]):Future[List[ParsedSentence]] = Future {
     sentences.map { sentence =>
       val tokens = getTokens(sentence)
       val tree:Option[Tree] = getAsOption(sentence.get(classOf[TreeAnnotation]))

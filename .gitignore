@@ -2,3 +2,4 @@
 /src/main/resources/application.conf
 /.idea/
 /src/main/scala/au/edu/utscic/athanorserver/zz_experiments.sc
+/lib/jathanor-mac-linux.jar

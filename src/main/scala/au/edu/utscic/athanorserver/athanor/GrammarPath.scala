@@ -43,6 +43,7 @@ object GrammarPath {
 
   def validatePath(path:String):Option[String] = {
     val file = new File(path)
+    //println("FilePath: "+file.getAbsolutePath)
     if (file.exists && file.isDirectory) Some(path) else None
   }
 

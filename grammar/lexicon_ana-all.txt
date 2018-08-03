@@ -1,5 +1,5 @@
 ability = [transparent=+].
-above = [ksw=+,weak=+,deict=+].
+above = [deict=+].
 absurd[POS:JJ] = [contr=+,nounary=+,ksw=+,nonot=+].
 absurdity[Noun:+] = [contr=+,nounary=+,ksw=+].
 absurdly[Adv:+] = [contr=+,nounary=+,ksw=+].
@@ -94,6 +94,7 @@ attention[Noun:+,Toutmaj:~] = [mental=+,ksw=+,nogrow=+].
 author = [scope=+,publ=+,notfirsttime=+,ksw=+].
 avenue[Noun:+,Toutmaj:~] = [scope=+,ksw=+,nogrow=+].
 aware = [mental=+,ksw=+,know=+].
+base[POS:VBN] = [mental=+,ksw=+,wscope=+].
 become = [change=+,ksw=+,wscope=+].
 begin[Noun:+] = [transparent=+].
 behavior = [domain=+].
@@ -101,7 +102,7 @@ behaviour = [domain=+].
 belief[Noun:+] = [scope=+,ksw=+].
 believed[POS:JJ] = [mental=+,ksw=+].
 believe[Verb:+] = [mental=+,ksw=+].
-below = [ksw=+,weak=+,deict=+].
+below = [deict=+].
 best-known = [importance=+].
 bit = [transparent=+].
 blur = [contr=+,ksw=+,nounary=+].
@@ -246,7 +247,7 @@ criticize = [contr=+,nounary=+,ksw=+].
 crucial = [importance=+].
 curious = [attitude=+,ksw=+,nonot=+,wmentsco=+].
 curiously[Adv:+] = [surprise=+,ksw=+,nonot=+].
-current[POS:JJ] = [ksw=+,weak=+,deict=+].
+current[POS:JJ] = [deict=+].
 datum[Toutmaj:~] = [ksw=+,scope=+].
 deal[Verb:+] = [mental=+,ksw=+].
 debatable = [contr=+,nounary=+,ksw=+].
@@ -288,6 +289,7 @@ development[Noun:+,Toutmaj:~] = [scope=+,ksw=+,nogrow=+,wscope=+,new=+,timefact=
 devise[Verb:+] = [mental=+,ksw=+].
 different = [contr=+,ksw=+,nounary=+,wmentsco=+,weak=+].
 differentiate = [mental=+,ksw=+].
+dig = [mental=+,ksw=+,wmentsco=+].
 dilemma[Noun:+] = [contr=+,nounary=+,ksw=+,noweak=+,wseem=+].
 direction[Noun:+,Toutmaj:~] = [scope=+,widescope=+,wscope=+,ksw=+].
 disagreement[Noun:+] = [contr=+,nounary=+,ksw=+].
@@ -333,6 +335,7 @@ doubt = [contr=+,nounary=+,ksw=+,nonot=+].
 doubted = [contr=+,ksw=+,nounary=+,nonot=+].
 doubtful = [contr=+,nounary=+,ksw=+,mental=+,nonot=+].
 dubious = [contr=+,nounary=+,ksw=+,mental=+,nonot=+].
+earlier = [timefact=+,ksw=+,old=+].
 element = [ksw=+,scope=+].
 elucidate[Verb:+] = [mental=+,ksw=+,know=+].
 elucidation[Noun:+] = [mental=+,ksw=+,know=+].
@@ -354,6 +357,7 @@ enigmatically[Adv:+] = [contr=+,nounary=+,ksw=+,nonot=+,noweak=+].
 enigmaticness[Noun:+] = [contr=+,nounary=+,ksw=+,noweak=+].
 enlighten[Verb:+] = [mental=+,ksw=+,know=+].
 enormous = [importance=+].
+entail = [mental=+,ksw=+,wwidescope=+,change=+].
 epistemologically = [scope=+,ksw=+,widescope=+,nogrow=+].
 epistemological = [scope=+,ksw=+,widescope=+,nogrow=+]. 
 epistemology = [scope=+,ksw=+,widescope=+,nogrow=+].
@@ -413,8 +417,9 @@ flaw = [contr=+,ksw=+,nounary=+].
 flawed = [contr=+,ksw=+,nounary=+].
 focus[Noun:+] = [publ=+,mental=+,scope=+,ksw=+,know=+,importance=+,noweak=+].
 focus[Verb:+] = [publ=+,mental=+,ksw=+,know=+,importance=+,noweak=+].
-follow[POS:JJ] = [ksw=+,weak=+,deict=+].
-follow = [ksw=+,weak=+,deict=+].
+follow[POS:JJ] = [deict=+].
+follow = [deict=+].
+following = [deict=+].
 foreground[Verb:+] = [mental=+,ksw=+].
 formulate = [mental=+,ksw=+].	
 formulation = [mental=+,ksw=+].
@@ -615,7 +620,7 @@ nevertheless = [contr=+,ksw=+,speccontr=+,func=+,however=+].
 new[POS:JJ] = [timefact=+,ksw=+,new=+].
 newly[Adv:+] = [timefact=+,ksw=+]. 
 newness[Noun:+] = [timefact=+,ksw=+].
-next = [ksw=+,weak=+,deict=+].
+next = [deict=+].
 no = [contr=+,nounary=+,ksw=+,speccontr=+,func=+,forneg=+].
 none = [contr=+,ksw=+,nounary=+].
 nonetheless = [contr=+,ksw=+,speccontr=+,func=+,however=+].
@@ -638,7 +643,7 @@ novelty[Noun:+] = [timefact=+,ksw=+,new=+].
 objection = [mental=+,ksw=+,contr=+,nounary=+].
 objective[POS:JJ] = [ksw=+,publ=+,nothis=+,relmark=+,notfirsttime=+].
 objective[Noun:+] = [ksw=+,publ=+,nothis=+,relmark=+,notfirsttime=+].
-object[Noun:+,Sg:+] = [relmark=+].
+object[Noun:+,Sg:+] = [relmark=+,ksw=+].
 obscure[POS:JJ] = [contr=+,nounary=+,ksw=+,nonot=+,know=+,noweak=+].
 observation[Noun:+,Toutmaj:~] = [scope=+,ksw=+,nogrow=+].
 observe = [mental=+,ksw=+].
@@ -708,7 +713,7 @@ prediction[Toutmaj:~] = [scope=+,nogrow=+,ksw=+,wcontr=+].
 predominant = [importance=+].
 predominantly = [importance=+].
 presentation[Sg:+] = [ksw=+,publ=+,mental=+].
-present[POS:JJ] = [ksw=+,deict=+].
+present[POS:JJ] = [deict=+].
 present[Verb:+] = [ksw=+,publ=+,mental=+].
 presumed = [mental=+,ksw=+].
 presume = [mental=+,ksw=+].
@@ -782,6 +787,8 @@ reconfiguring = [contr=+,nounary=+,ksw=+].
 reconsideration = [mental=+,ksw=+,contr=+,nounary=+].
 reconsidered = [mental=+,ksw=+,contr=+,nounary=+].
 reconsidering = [mental=+,ksw=+,contr=+,nounary=+].
+re-considered = [mental=+,ksw=+,contr=+,nounary=+].
+re-consider = [mental=+,ksw=+,contr=+,nounary=+].
 reconsider = [mental=+,ksw=+,contr=+,nounary=+].
 reconstruction = [mental=+,ksw=+,contr=+,nounary=+,wscope=+].
 reconstruct = [mental=+,ksw=+,contr=+,nounary=+,wscope=+].
@@ -1074,3 +1081,5 @@ specimen[Noun:+] = [transparent=+].
 example[Noun:+] = [transparent=+].
 case[Noun:+]= [transparent=+].
 instance[Noun:+] = [transparent=+].
+range[Noun:+] = [transparent=+].
+

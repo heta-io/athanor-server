@@ -1,4 +1,4 @@
-Sabove = [ksw=+,weak=+,deict=+].
+above = [deict=+].
 abundance = [change=+,incr=+,ksw=+,wscope=+].
 academic = [scope=+,ksw=+].
 accept = [mental=+,ksw=+].
@@ -72,7 +72,7 @@ become = [change=+,ksw=+,wscope=+].
 believe[Verb:+] = [mental=+,ksw=+].
 believed[Adj:+] = [mental=+,ksw=+].
 belief[Noun:+] = [scope=+,ksw=+].
-below = [ksw=+,weak=+,deict=+].
+below = [deict=+].
 best-known = [importance=+].
 blur = [contr=+,ksw=+,nounary=+].
 bottleneck = [contr=+,nounary=+,ksw=+].
@@ -199,10 +199,11 @@ critical = [attitude=+,ksw=+,nonot=+,noweak=+,wmentsco=+,nohyph=+,nounary=+].
 critically[POS:RB] = [contr=+,ksw=+,nonot=+,noweak=+,wmentsco=+,nounary=+].
 curious = [attitude=+,ksw=+,nonot=+,wmentsco=+].
 curiously[POS:RB] = [attitude=+,surprise=+,ksw=+,nonot=+].
-current[NAdj:+] = [ksw=+,weak=+,deict=+].
+current[NAdj:+] = [deict=+].
 feature = [ksw=+,mental=+].
-follow[Adj:+] = [ksw=+,weak=+,deict=+].
-follow = [ksw=+,weak=+,deict=+].
+follow[Adj:+] = [deict=+].
+follow = [deict=+].
+following = [deict=+].
 data[Toutmaj:~] = [ksw=+,scope=+].
 deal[Verb:+] = [mental=+,ksw=+].
 debatable = [contr=+,nounary=+,ksw=+].
@@ -490,7 +491,7 @@ neglect[Prog:+] = [mental=+,ksw=+,contr=+,nounary=+,noweak=+,nonot=+].
 neglected[Adj:+] = [mental=+,ksw=+,contr=+,nounary=+,noweak=+,nonot=+].
 neglect[Noun:+] = [mental=+,ksw=+,contr=+,nounary=+,noweak=+,nonot=+].
 neglect[Verb:+] = [mental=+,ksw=+,contr=+,nounary=+,noweak=+,nonot=+].
-next = [ksw=+,weak=+,deict=+].
+next = [deict=+].
 new[Adj:+] = [timefact=+,ksw=+,new=+].
 newly[POS:RB] = [timefact=+,ksw=+]. 
 newness[Noun:+] = [timefact=+,ksw=+].
@@ -851,7 +852,7 @@ conclude = [publ=+,relmark=+,relword=+,notfirsttime=+,ksw=+,mental=+,wcontr=+].
 point = [ksw=+,publ=+,scope=+,wment=+].
 purpose[Noun:+] = [ksw=+,publ=+,nothis=+,relmark=+,notfirsttime=+].
 aim[Noun:+] = [ksw=+,publ=+,nothis=+,relmark=+,notfirsttime=+].
-object[Noun:+,Sg:+] = [relmark=+].
+object[Noun:+,Sg:+] = [relmark=+,ksw=+].
 sum = [publ=+,ksw=+,relmark=+,relword=+].
 summary = [publ=+,ksw=+,relmark=+,relword=+].
 discuss[Verb:+] = [ksw=+,publ=+,mental=+].
@@ -864,7 +865,7 @@ sum = [ksw=+,publ=+].
 summarize[Verb:+,Pres:+] = [ksw=+,publ=+].
 show[Verb:+,Pres:+] = [ksw=+,publ=+,mental=+].
 present[Verb:+] = [ksw=+,publ=+,mental=+].
-present[NAdj:+] = [ksw=+,deict=+].
+present[POS:JJ] = [deict=+].
 presentation[Sg:+] = [ksw=+,publ=+,mental=+].
 focus[Verb:+] = [publ=+,mental=+,ksw=+,know=+,importance=+].
 focus[Noun:+] = [publ=+,mental=+,scope=+,ksw=+,know=+,importance=+].

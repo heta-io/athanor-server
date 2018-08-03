@@ -45,10 +45,10 @@ class AthanorSpec extends UnitSpec {
     JSONAssert.assertEquals(expected,actual,true)
   }
 
-  it should "analyseParsedSentence" in {
-    val result = Athanor.analyseParsedSentence(TestData.athParsedSentence,"reflective")
-    assert(result.toSet==rhetoricalMoves.toSet) //Order doesn't matter
-  }
+//  it should "analyseParsedSentence" in {
+//    val result = Athanor.analyseParsedSentence(TestData.athParsedSentence,"reflective")
+//    assert(result.toSet==rhetoricalMoves.toSet) //Order doesn't matter
+//  }
 
 //  it should "analyseJsonSentence" in {
 //    val result = Athanor.analyseJson(TestData.athJsonString)

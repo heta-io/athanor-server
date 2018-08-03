@@ -1,0 +1,13 @@
+function reponse(string contenu,self o) {
+    println(contenu);
+}
+
+
+curl c with reponse;
+
+c.proxy("13.202.220.243:3128");
+c.url('http://www.lemonde.fr');
+
+c.execute();
+
+

@@ -1,0 +1,21 @@
+function reponse(string contenu,self o) {
+    println(contenu);
+}
+
+
+curl c with reponse;
+
+string topic="This document provides important and specific information about our main topic of interest.";
+
+
+topic=kget("Vos phrases:");
+
+println(topic);
+c.proxy("13.202.220.243:3128");
+c.options("CURLOPT_URL",'http://athanor.utscic.edu.au/v2/analyse/text/rhetorical');
+c.options("CURLOPT_POSTFIELDS", topic);
+c.options("CURLOPT_POSTFIELDSIZE", topic.sizeb());
+c.options("CURLOPT_POST", 1);
+
+c.execute();
+

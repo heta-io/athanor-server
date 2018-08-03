@@ -1,3 +1,5 @@
+//We can select one single sentence out of a file
+int selectsentence=_args[1];
 
 extension string {
     
@@ -16,6 +18,7 @@ frame Stanfordoutput {
     vector dependances;
     xml pars;
     bool adddep;
+    int unseul;
     
     function traverse(vector vv,vector tokens, self i) {
         for (self e in vv[1:]) {
@@ -35,6 +38,12 @@ frame Stanfordoutput {
     }
     
     function decompose(xml x, self s) {
+        if (x.name()=="sentence")
+            unseul++;
+
+        if (unseul!=selectsentence)        
+            return;
+        
         switch (x.name()) {
             "dependencies": if (x["type"]=="basic-dependencies") adddep=true; else adddep=false;
             "dep": if (adddep) dependances.push({"name":x["type"]});
@@ -56,6 +65,7 @@ frame Stanfordoutput {
     function Load(string filename) {
         xmldoc doc with decompose;
         doc.load(filename);
+        unseul=0;
 
         for (self e in tokens) {
             map m;
@@ -96,3 +106,8 @@ if (filename=="")
 
 Stanfordoutput sentence;
 sentence.Load(filename);
+
+
+
+
+

@@ -11,5 +11,5 @@ akka {
 }
 
 app {
-  grammar.path = "/my/path/to/athanor-server/grammar"
+  grammar.path = ${?GRAMMAR_PATH} #"/my/path/to/athanor-server/grammar"
 }

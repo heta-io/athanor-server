@@ -166,7 +166,7 @@ function traverse(vector v, treemapi nodes, vector deps,self surf,synode r) {
 
 function Apply(string js) {
     lock("apply");
-    printlnerr(_threadhandle(),"Athanor: Apply with:",js[:80]+"...");
+    //printlnerr(_threadhandle(),"Athanor: Apply with:",js[:80]+"...");
     js=js.trim();
     vector  v=js;
 
@@ -234,7 +234,7 @@ function Apply(string js) {
     unlock("apply");
     //we return the result as a JSON map structure
     svector vres=m.keys();
-    printlnerr("Output (within apply_ana.kif):",vres);
+    //printlnerr("Output (within apply_ana.kif):",vres);
     return(vres);
 }
 
